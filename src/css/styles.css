@@ -76,8 +76,8 @@ li {
 	box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	padding: 0px 14px;
+	justify-content: space-between;
+	padding: 14px;
 	margin-right: 17px;
 	position: relative;
 }
@@ -98,7 +98,8 @@ li img {
 }
 
 .options li p {
-	font-weight: 700;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
 	font-size: 16px;
 	line-height: 19px;
 	letter-spacing: 0px;
@@ -113,111 +114,10 @@ li span {
 	color: #a6a6a6;
 }
 
-.banner {
-	position: absolute;
-	width: 100vw;
-	height: 1071px;
-	background-color: rgba(255, 255, 255, 0.9);
-	top: 0;
-	left: 0;
-	z-index: 3;
-}
-
-.banner .banner-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	position: fixed;
-	width: 95vw;
-	height: 375px;
-	background-color: #50d074;
-	border-radius: 9px;
-	top: calc(50% - 375px / 2);
-	left: calc((100vw - 95vw) / 2);
-}
-
-.banner .banner-content p {
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 26px;
-	text-align: center;
-	color: #fff;
-	margin: 20px 0px 0px;
-	padding-bottom: 15px;
-}
-
-.banner .banner-content ul {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	overflow-x: unset;
-	overflow-y: unset;
-	padding-left: 0px;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-	padding-bottom: 50px;
-}
-
-.banner .banner-content li {
-	width: 90%;
-	height: auto;
-	background-color: transparent;
-	margin-top: 0px;
-	border-radius: 0px;
-	box-shadow: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 8px 0px;
-	margin: 0px;
-}
-
-.banner .banner-content li span {
-	font-weight: normal;
-	font-size: 22px;
-	line-height: 26px;
-	letter-spacing: 0.018em;
-	color: #fff;
-}
-
-.banner-content li:last-child span {
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 26px;
-	letter-spacing: 0.018em;
-}
-
-.whats-button {
-	width: 80%;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #fff;
-	border-radius: 100px;
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 26px;
-	letter-spacing: 0.018em;
-	color: #50d074;
-	border: none;
-}
-
-.cancel-button {
-	width: 40%;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: transparent;
-	border-radius: 100px;
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 23px;
-	letter-spacing: 0.018em;
-	color: #fff;
-	border: none;
+li span.price, .amount {
+	font-weight: 400;
+	color: #000;
+	padding: 0px 5px;
 }
 
 .bottom {
@@ -248,13 +148,30 @@ li span {
 	color: #fff;
 }
 
-.food.selected,
-.drink.selected,
-.dessert.selected {
+.selected {
 	box-shadow: inset 0px 0px 0px 5px #32b72f,
 		0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 .confirm.selected {
 	background-color: #32b72f;
+}
+
+.counter {
+	position: absolute;
+	display: flex;
+	justify-content: space-evenly;
+	width: 47px;
+	height: 19px;
+	z-index: 2;
+	bottom: 15px;
+	right: 12px;
+}
+
+.minus {
+	color: #cf2b2b;
+}
+
+.plus {
+	color: #68B832;
 }

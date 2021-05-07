@@ -1,7 +1,13 @@
 import React from "react";
-import Option from "./Options";
+import Dish from "./Dish";
+import Bottom from "./Bottom";
 
 export default function Menu() {
+	const titles = [
+		"Primeiro, seu prato",
+		"Agora, sua bebida",
+		"Por fim, a sobremesa",
+	];
 	const foods = [
 		{
 			img: "frango-curry",
@@ -80,64 +86,71 @@ export default function Menu() {
 			price: "8,90",
 		},
 	];
-    const [selectedFood, setSelectedFood] = React.useState([]);
-    const [selectedDrink, setSelectedDrink] = React.useState([]);
-    const [selectedDessert, setSelectedDessert] = React.useState([]);
+	const [selectedFood, setSelectedFood] = React.useState([]);
+	const [selectedDrink, setSelectedDrink] = React.useState([]);
+	const [selectedDessert, setSelectedDessert] = React.useState([]);
 
 	return (
-		<div className="menu">
-			<div className="options">
-				<div>
-					<p>Primeiro, seu prato</p>
-					<ul>
-						{foods.map((f) => {
-							<Option
-								img={f.img}
-								title={f.title}
-								description={f.description}
-								price={f.price}
-                                selected={selectedFood}
-                                setSelected={setSelectedFood}
-							/>;
-						})}
-						<li></li>
-					</ul>
-				</div>
+		<>
+			<div className="menu">
+				<div className="options">
+					<div>
+						<p>Primeiro, seu prato</p>
+						<ul>
+							{foods.map((f) => (
+								<Dish
+									img={f.img}
+									title={f.title}
+									description={f.description}
+									price={f.price}
+									selected={selectedFood}
+									setSelected={setSelectedFood}
+								/>
+							))}
+							<li></li>
+						</ul>
+					</div>
 
-				<div>
-					<p>Agora, sua bebida</p>
-					<ul>
-						{drinks.map((d) => {
-							<Option
-								img={d.img}
-								title={d.title}
-								description={d.description}
-								price={d.price}
-                                selected={selectedDrink}
-                                setSelected={setSelectedDrink}
-							/>;
-						})}
-						<li></li>
-					</ul>
-				</div>
+					<div>
+						<p>Agora, sua bebida</p>
+						<ul>
+							{drinks.map((d) => (
+								<Dish
+									img={d.img}
+									title={d.title}
+									description={d.description}
+									price={d.price}
+									selected={selectedDrink}
+									setSelected={setSelectedDrink}
+								/>
+							))}
+							<li></li>
+						</ul>
+					</div>
 
-				<div>
-					<p>Por fim, a sobremesa</p>
-					<ul>
-						{desserts.map((d) => {
-							<Option
-								img={d.img}
-								title={d.title}
-								description={d.description}
-								price={d.price}
-                                selected={selectedDessert}
-                                setSelected={setSelectedDessert}
-							/>;
-						})}
-						<li></li>
-					</ul>
+					<div>
+						<p>Por fim, a sobremesa</p>
+						<ul>
+							{desserts.map((d) => (
+								<Dish
+									img={d.img}
+									title={d.title}
+									description={d.description}
+									price={d.price}
+									selected={selectedDessert}
+									setSelected={setSelectedDessert}
+								/>
+							))}
+							<li></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
+			<Bottom
+				foods={selectedFood}
+				drinks={selectedDrink}
+				desserts={selectedDessert}
+			/>
+		</>
 	);
 }
