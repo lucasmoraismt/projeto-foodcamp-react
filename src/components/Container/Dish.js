@@ -16,14 +16,14 @@ export default function Option(props) {
 					title: title,
 					price: price,
 					amount: amount,
-				}
+				},
 			]);
 		} else if (boolean) {
 			setBoolean(false);
 			setSelected(selected.filter((t) => t.title !== title));
 		}
 	}
-	
+
 	return (
 		<li onClick={select} className={boolean ? "selected" : ""}>
 			<img src={`media/${img}.png`} alt={description} />
@@ -38,6 +38,7 @@ export default function Option(props) {
 					selected={selected}
 					setSelected={setSelected}
 					title={title}
+					price={price}
 				/>
 			)}
 		</li>
