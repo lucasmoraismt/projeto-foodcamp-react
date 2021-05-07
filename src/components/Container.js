@@ -3,11 +3,6 @@ import Dish from "./Dish";
 import Bottom from "./Bottom";
 
 export default function Menu() {
-	const titles = [
-		"Primeiro, seu prato",
-		"Agora, sua bebida",
-		"Por fim, a sobremesa",
-	];
 	const foods = [
 		{
 			img: "frango-curry",

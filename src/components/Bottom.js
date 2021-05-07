@@ -1,10 +1,9 @@
 export default function Bottom(props) {
-	const {foods, drinks, desserts} = props;
-	console.log(props);
+	const { foods, drinks, desserts } = props;
 
 	function Confirm() {
 		return (
-			<button className="confirm selected" >
+			<button className="confirm selected">
 				<p>Fechar o pedido</p>
 			</button>
 		);
