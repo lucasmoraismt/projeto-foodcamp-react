@@ -8,6 +8,7 @@ export default function Option(props) {
 			<ul>
 				{array.map((f) => (
 					<Dish
+                        key={f.title}
 						img={f.img}
 						title={f.title}
 						description={f.description}

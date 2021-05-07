@@ -16,7 +16,7 @@ export default function Option(props) {
 					title: title,
 					price: price,
 					amount: amount,
-				},
+				}
 			]);
 		} else if (boolean) {
 			setBoolean(false);
