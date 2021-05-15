@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="FoodCamp" title="#FoodCamp" src="src/assets/banner.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+    <a href="#">FoodCamp</a>
+</h1>
 
-## Available Scripts
+<p align="center">  
+   <img alt="License" src="https://img.shields.io/github/license/lucasmoraismt/projeto-foodcamp-react?style=for-the-badge">
+   <a href="https://github.com/">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/lucasmoraismt/projeto-foodcamp-react?style=for-the-badge">
+  </a>
+</p>
 
-In the project directory, you can run:
+<h4 align="center"> 
+	 Status: Delivered.
+</h4>
 
-### `npm start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+FoodCamp is an easy and fast way to order a meal. <br>
+Project developed during ** Bootcamp Responde Aí ** offered by [Responde Aí](https://www.respondeai.com.br/). <br>
+The focus of this project is to further develop Front End skills and to learn React, states and componentization, changing from pure JavaScript to React, also using HTML5, CSS3.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] Mobile Layout
 
-### `npm run build`
+- [x] Homepage experience:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - [x] Loads foods, drinks and desserts options;
+  - [x] Can select how many meals you want!
+  - [x] After at least one option from each category is selected, order button becomes available.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [x] Purchase experience
+  - [x] When order button is clicked, user gets redirected to WhatsApp with the order message ready to send;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Layout
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application layout is available on Figma:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://www.figma.com/file/nkRQD9TcxvzLQFO27JsGV1/FoodCamp-%5BReact%5D?node-id=0%3A1">
+  <img alt="Project Figma" src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+</a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Mobile
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align="center">
+  <img alt="Mobile Homepage" title="#Homepage" src="src/assets/homepage.png" width="180px" height="340px">
+  <img alt="Item selection" title="#ItemSelection" src="src/assets/item-selection.png" width="180px" height="340px">
+  <img alt="Order Button" title="#OrderButton" src="src/assets/order-button.png" width="180px" height="340px">
+</p>
 
-## Learn More
+## Tech Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The following tools were used in the construction of the project:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)**
+- **[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html5.org/)**
+- **[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/Overview.en.html)**
+- **[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)**
 
-### Code Splitting
+#### **Utilities**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Prototype: **[Figma](https://www.figma.com/)** → **[Protótipo (FoodCamp)](https://www.figma.com/file/nkRQD9TcxvzLQFO27JsGV1/FoodCamp-%5BReact%5D?node-id=0%3A1)**
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
+- Deploy: **[Vercel](https://vercel.com/)**
+- Fonts: **[Roboto](https://fonts.google.com/specimen/Roboto)**
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Authors
 
-### Making a Progressive Web App
+<p>
+<a style="border-radius: 50px;" width="100px;" href="https://github.com/lucasmoraismt">
+ <img style="border-radius: 50px;" src="https://avatars.githubusercontent.com/u/31478895?s=400&u=42f732bb139de94096939fe3a36d2423d1bc9550&v=4" width="100px;" alt="Lucas Morais"/>
+ <br />
+ <sub><b>Lucas de Morais</b></sub></a>
+ <br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucasmoraismt/)
 
-### Advanced Configuration
+## </p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is under the license [MIT](./LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👋🏽 Get in Touch!
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
